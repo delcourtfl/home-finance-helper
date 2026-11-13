@@ -1,0 +1,145 @@
+<template class="param-container">
+    <table class="param-table">
+        <thead>
+            <tr>
+                <th data-group="property">🏠 Property</th>
+                <th data-group="bank">🏦 Mortgage</th>
+                <th data-group="rent">🔑 Rental</th>
+                <th data-group="invest">📈 Investment & market</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="housePrice">
+                    <label>
+                        House price (€)
+                    </label>
+                    <div>
+                        <input type="range" value="450000" data-type="euro">
+                        <input type="number" value="450000" data-type="euro">
+                    </div>
+                </td>
+                <td id="loanAmount">
+                    <label>
+                        Loan amount (€)
+                    </label>
+                    <div>
+                        <input type="range" value="300000" data-type="euro">
+                        <input type="number" value="300000" data-type="euro">
+                    </div>
+                </td>
+                <td id="rent">
+                    <label>
+                        Monthly rent (€)
+                    </label>
+                    <div>
+                        <input type="range" value="1100" data-type="low_euro">
+                        <input type="number" value="1100" data-type="low_euro">
+                    </div>
+                </td>
+                <td id="initialSavings">
+                    <label>
+                        Initial savings (€)
+                    </label>
+                    <div>
+                        <input type="range" value="150000" data-type="euro">
+                        <input type="number" value="150000" data-type="euro">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td id="houseAppreciation">
+                    <label>
+                        House appreciation (%)
+                    </label>
+                    <div>
+                        <input type="range" value="2" data-type="low_percentage">
+                        <input type="number" value="2" data-type="low_percentage">
+                    </div>
+                </td>
+                <td id="annualRate">
+                    <label>
+                        Interest rate (%)
+                    </label>
+                    <div>
+                        <input type="range" value="2" data-type="low_percentage">
+                        <input type="number" value="2" data-type="low_percentage">
+                    </div>
+                </td>
+                <td id="rentInflation">
+                    <label>
+                        Rent inflation (%)
+                    </label>
+                    <div>
+                        <input type="range" value="1" data-type="low_percentage">
+                        <input type="number" value="1" data-type="low_percentage">
+                    </div>
+                </td>
+                <td id="investmentReturn">
+                    <label>
+                        Investment return (%)
+                    </label>
+                    <div>
+                        <input type="range" value="3" data-type="low_percentage">
+                        <input type="number" value="3" data-type="low_percentage">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                </td>
+                <td id="durationYears">
+                    <label>
+                        Duration (years)
+                    </label>
+                    <div>
+                        <input type="range" value="20" data-type="year">
+                        <input type="number" value="20" data-type="year">
+                    </div>
+                </td>
+                <td>
+                </td>
+                <td>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <details class="param-extra">
+        <summary>⚙️ Additional settings</summary>
+        <table class="param-table">
+            <tbody>
+                <tr>
+                    <td id="maintenanceCosts">
+                        <label>
+                            House Maintenance Costs (%)
+                        </label>
+                        <div>
+                            <input type="range" value="0" data-type="low_percentage">
+                            <input type="number" value="0" data-type="low_percentage">
+                        </div>
+                    </td>
+                    <td id="buyYear">
+                        <label>
+                            Buying Time (years)
+                        </label>
+                        <div>
+                            <input type="range" value="0" data-type="year">
+                            <input type="number" value="0" data-type="year">
+                        </div>
+                    </td>
+                    <td id="comparisonYears">
+                        <label>
+                            Comparison period (years)
+                        </label>
+                        <div>
+                            <input type="range" value="20" data-type="year">
+                            <input type="number" value="20" data-type="year">
+                        </div>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+</template>

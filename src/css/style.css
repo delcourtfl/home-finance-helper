@@ -1,0 +1,92 @@
+header {
+    display: flex;
+}
+
+.param-table td {
+    padding: 4px;
+    font-size: 0.8rem;
+}
+.param-table th {
+    text-align: center;
+}
+.param-table div {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    input {
+        padding: 5px;
+        margin: 0;
+        box-sizing: border-box;
+        width: 100%;
+    }
+}
+
+.param-extra summary {
+    display: block;
+    width: 100%;
+}
+
+canvas {
+    width: 100%;
+}
+
+.param-table th,
+.param-table td {
+    text-align: center;
+}
+
+.param-table tbody tr {
+    background: transparent;
+}
+
+.param-table tbody td:nth-child(odd),
+.param-table thead th:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.02);
+}
+
+.param-table tbody td:nth-child(even),
+.param-table thead th:nth-child(even) {
+    background: transparent;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.param-extra {
+    overflow: visible;
+}
+
+.param-table-sticky thead {
+    position: sticky;
+    background-color: var(--background-alt);
+    top: 0px;
+}
+
+.hidden {
+    display: none;
+}
+
+#errorBanner {
+    display: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    position: fixed;
+    width: fit-content;
+    padding: 6px;
+    background: #aa2b38;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+#errorBanner.show {
+    display: block;
+}
