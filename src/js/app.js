@@ -5,6 +5,8 @@ import { calculateComparison } from './calculations/comparison.js';
 
 const panel = document.querySelector('bench-parameters');
 const chart = document.querySelector('bench-chart');
+const sections = document.querySelectorAll('section[id]');
+const selector = document.getElementById('selector');
 
 let errorTimeout;
 
@@ -17,7 +19,7 @@ function showError(message) {
     clearTimeout(errorTimeout);
 
     errorTimeout = setTimeout(() => {
-        // banner.classList.remove("show");
+        banner.classList.remove("show");
     }, 4000);
 }
 
@@ -39,4 +41,12 @@ panel.addEventListener('parameters-change', event => {
     } catch (error) {
         showError(error.message);
     }
+});
+
+selector.addEventListener('change', event => {
+    sections.forEach(section => {
+        section.hidden = true;
+    });
+    const activated = event.target.value;
+    document.getElementById(activated).hidden = false;
 });

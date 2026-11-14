@@ -90,3 +90,11 @@ header {
 #errorBanner.show {
     display: block;
 }
+
+.view-switcher {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 100;
+    text-align: center;
+}

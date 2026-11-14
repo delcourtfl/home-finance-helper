@@ -11,16 +11,32 @@
 	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 	<script type="module" src="./src/js/app.js"></script>
 </head>
-
 <body>
-	<header>
-		<h1>Buy or Rent</h1>
-		<p>Compare the financial impact of buying versus renting.</p>
-	</header>
-	<main>
-		<div id="errorBanner"></div>
-		<bench-parameters></bench-parameters>
-		<bench-chart></bench-chart>
-	</main>
+	<div class="view-switcher">
+		<label>Switch dashboard</label>
+		<select id="selector">
+			<option value="buy-rent">Buy or Rent</option>
+			<option value="todo">TODO</option>
+		</select>
+	</div>
+	<div id="errorBanner"></div>
+	<section id="buy-rent">
+		<header>
+			<h1>Buy or Rent</h1>
+			<h5>Compare the financial impact of buying versus renting.</h5>
+		</header>
+        <main>
+            <bench-parameters></bench-parameters>
+            <bench-chart></bench-chart>
+        </main>
+	</section>
+	<section id="todo" hidden>
+		<header>
+			WIP
+		</header>
+        <main>
+			TODO
+        </main>
+	</section>
 </body>
 </html>
